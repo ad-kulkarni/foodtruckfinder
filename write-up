@@ -1,9 +1,9 @@
-Building a fully featured web application that uses the data provided by the Socrata API,
-would involve a front-end (a web interface or a mobile interface) and a back-end that comprises of web services and databases.
-For serving millions of concurrent users, one should leverage distributed systems architecture and scale out or scale in (auto-scale) depending on the load. Load should be distributed uniformly across all available servers. Requests should be cached using a suitable caching mechanism so that application servers do not get overloaded with requests.
+Building a fully featured web application that uses the data provided by the Socrata API, would involve a front-end (a web interface or a mobile interface) and a back-end that comprises of web services and databases.
+For serving millions of concurrent users, one should leverage distributed systems architecture and scale out or scale in (auto-scale) depending on the load. Load should be distributed uniformly across all available servers. 
+Requests should be cached using a suitable caching mechanism so that application servers do not get overloaded with requests.
 
-Front-end features:
-- The front-end could be a web application or a mobile application or both and should include the following features,
+# Front-end features:
+  The front-end could be a web application or a mobile application or both and should include the following features,
 	Functional requirements:
 	- Ability to search across a range of open food trucks on a given day at a given time in a "List view" or a "Map view".
 	- Ability to view paginated results and navigate across pages.
@@ -15,8 +15,8 @@ Front-end features:
 	- Data should be cached at application level.
 	- It should be highly consistent and should always show accurate and the latest available data.
 
-Back-end features:
-- Back-end would involve a wide-range of web services or microservices communicating with each other and storing/updating relevant data
+# Back-end features:
+  Back-end would involve a wide-range of web services or microservices communicating with each other and storing/updating relevant data
 	Functional requirements:
 	- Web servers to handle client requests.
 	- Application servers to handle requests coming from web servers.
