@@ -23,7 +23,7 @@ public class FoodTruckMain {
         }
 
         if(foodTrucks.size() <= PAGE_LIMIT) {
-            foodTruckHelper.printFoodTruckList(foodTrucks);
+            foodTruckHelper.displayFoodTrucks(foodTrucks);
         } else {
             foodTruckHelper.displayPaginatedResultsBasedOnUserInput(foodTrucks);
         }

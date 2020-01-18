@@ -77,6 +77,12 @@ public class FoodTruckHelper {
         return foodTrucks;
     }
 
+    public void displayFoodTrucks(List<FoodTruck> foodTrucks) {
+        System.out.println(LINE_FORMAT);
+        System.out.println(foodTrucks.size() + " food trucks are open right now");
+        printFoodTruckList(foodTrucks);
+    }
+
     public void displayPaginatedResultsBasedOnUserInput(List<FoodTruck> foodTrucks) {
         Map<Integer, List<FoodTruck>> foodTrucksPaginatedMap = new HashMap<>();
 
