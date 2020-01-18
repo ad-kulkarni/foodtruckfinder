@@ -1,0 +1,31 @@
+Building a fully featured web application that uses the data provided by the Socrata API,
+would involve a front-end (a web interface or a mobile interface) and a back-end that comprises of web services and databases.
+For serving millions of concurrent users, one should leverage distributed systems architecture and scale out or scale in (auto-scale) depending on the load. Load should be distributed uniformly across all available servers. Requests should be cached using a suitable caching mechanism so that application servers do not get overloaded with requests.
+
+Front-end features:
+- The front-end could be a web application or a mobile application or both and should include the following features,
+	Functional requirements:
+	- Ability to search across a range of open food trucks on a given day at a given time in a "List view" or a "Map view".
+	- Ability to view paginated results and navigate across pages.
+	- Ability to select a food truck from the list and view it's location and menu with prices (if available).
+
+	Non-functional requirements:
+	- The application should be highly available but if not, it should show appropriate error messages.
+	- Latency should be low or search requests should be fast.
+	- Data should be cached at application level.
+	- It should be highly consistent and should always show accurate and the latest available data.
+
+Back-end features:
+- Back-end would involve a wide-range of web services or microservices communicating with each other and storing/updating relevant data
+	Functional requirements:
+	- Web servers to handle client requests.
+	- Application servers to handle requests coming from web servers.
+	- Application servers could be disintegrated into microservices for example, a service for handling third party service requests, a service for parsing data, a service for audit logging, a service for tracking application metrics and so on.
+	- Load balancers to distribute load across web servers and application servers.
+	- Cache servers to cache requests across web servers and application servers.
+	- Load distribution mechanism/policy like Round Robin scheduling.
+	- Database server cluster configuration designed using an architecture like Master-Slave.
+
+	Non-functional requirements:
+	- Web services and databases should be highly available.
+	- Data should be consistent and accurate.
